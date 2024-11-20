@@ -1,0 +1,129 @@
+% Define document class
+\documentclass[twocolumn]{aastex63}
+\DeclareRobustCommand{\Eqref}[1]{Eq.~\ref{#1}}
+\DeclareRobustCommand{\Figref}[1]{Fig.~\ref{#1}}
+\DeclareRobustCommand{\Tabref}[1]{Tab.~\ref{#1}}
+\DeclareRobustCommand{\Secref}[1]{Sec.~\ref{#1}}
+\newcommand{\todo}[1]{{\large $\blacksquare$~\textbf{\color{red}[#1]}}~$\blacksquare$}
+\newcommand{\mr}[1]{{\textbf{\color{green!75!black}[#1]}}}
+% \usepackage{cuted}
+\usepackage{flushend}
+\usepackage{amsmath}
+\graphicspath{{./figures/}}
+
+\begin{document}
+
+% Title
+\title{\todo{title}}
+
+\author{C.~A.~Burt}
+\affiliation{University of Arizona, Department of Astronomy \& Steward Observatory, 933 N.~Cherry Ave., Tucson, AZ 85721, USA}
+
+\author[0000-0002-6718-9472]{M.~Renzo}
+\affiliation{University of Arizona, Department of Astronomy \& Steward Observatory, 933 N.~Cherry Ave., Tucson, AZ 85721, USA}
+
+\author[0000-0002-2215-1841]{A.~Grichener}
+\affiliation{University of Arizona, Department of Astronomy \& Steward Observatory, 933 N.~Cherry Ave., Tucson, AZ 85721, USA}
+
+\author{\todo{TBD}}
+
+\begin{abstract}
+  \todo{TBD} \todo{Christian, make an ORCiD account and add the number
+    in squared bracket to your author. Decide now if you want to
+    publish as C.~Burt or C.~A.~Burt (you should then stick with it
+    for the rest of your career)}
+\end{abstract}
+
+\section{Mass Transfer Between \mr{Very Massive stars \sout{Binary Black Hole Progenitors}}}
+
+Binary stars with a sufficiently small \mr{orbital separation
+  \sout{radius}} undergo a mass transfer phase in which one donor star
+transfers mass to an accretor star. For massive stars
+($>30M_{\odot}$), this occurs in two cases \mr{this is not correct, to
+  most people a 3Msun star is massive and could also have case C}.
+Case A mass transfer occurs while the donor star is in the main
+sequence\mr{, while c}ase B mass transfer occurs while the donor star
+is burning helium in its core \mr{\cite{kippenhahn:67}}. In both cases,
+the radius of the \mr{which star?} star expands, eventually
+overflowing its Roche Lobe, allowing for the surface to become
+gravitationally bound to the accretor \mr{logical order: maybe first
+  describe the radius expansion, then the filling of the Roche lobe,
+  then introduce case A/B}. The accretor gains the mass lost by the
+donor until the masses are equal \mr{no, typically until m2=1.1*(m2
+  before RLOF), see \cite{packet:81}}, or the mass gainer cannot
+accrete due to increased rotational velocity caused by angular
+momentum conservation. The \mr{increase in total mass of the accretor,
+  typically a main sequence star during RLOF, causes by the virial
+  theorem an increase in its central temperature and thus in the
+  extent of core-convection resulting in access to more nuclear fuel
+  and \sout{accreted mass has been observed to} elongation of the
+  lifespan of the star (\citealt{neo:77} but see also
+  \citealt{braun:95}) and potentially modifying its internal structure
+  and future evolution \citep[e.g.,]{renzo:23, , wagg:24, landri:24,
+    nathaniel:24}.}
+
+\mr{slow down a bit and reorder: first state that typically case B is the most
+  common, because stars expand most post-main sequence in the
+  Herzsprung gap \citep{vandenheuvel:69} then say something like
+  ``however the more massive the star, the greater radial expansion on
+  the main sequence'' \citep[e.g.,][]{brott:11} resulting in a change in
+  the ratio of number of systems going through case A vs. case B with
+  initial donor mass \citep{demink:08}. Please rephrase the paragraph
+  below}
+
+\mr{probably already from the ``introduction'' we need to say why we
+  care, why would readers care? binary interactions are crucial to the
+formation of GW sources, and in particular for BBH stable mass
+transfer may dominate \cite{marchant:21, vanson:21}}
+
+The relative proportion of case A mass transfer in comparison to case
+B mass transfer increases with mass of the donor star. This is
+expected, as larger stars see greater rates of radial expansion during
+the main sequence. This has a significant side effect for stars with
+($\gtrsim 75M_{\odot}$), case A mass transfer occurs in all possible
+mass transfer processes. For stars of lesser mass, the thermal
+expansion of the star at the end of the main sequence expands the star
+beyond its maximum radius during the main sequence. However, for stars
+in this mass range, the radius expands drastically during the main
+sequence, such that the maximum radius during the main sequence and
+helium core burning phase are similar.
+
+\mr{maybe here you need to explain a bit what we do in this research
+  note before jumping in the results!}
+\todo{Describe the models you run (which input physics, which code)
+  with and without overshooting, and the pols+98 models (just reference)}
+
+\mr{here you want to make sure to not confuse the readers, so the
+  paragraph above should be phrased as the typical expectation,
+  however, stellar physics uncertainties matter} Convective
+\mr{boundary mixing\sout{overshooting}} has a strong effect on stellar
+radius \cite{brott:11, johnston:24}, which determines Roche lobe
+overflow. \mr{Therefore \sout{Ergo}}, different overshooting models
+have a great effect on the nature of mass transfer. The model in the
+[panel] that limits case B for stars with mass ($\gtrsim 75M_{\odot}$)
+includes exponential overshooting with constants []. In contrast, the
+model in the [panel] shows no overshooting and consequently models a
+star that is much more compact. As a result, a system with no
+overshooting would allow for case B mass transfer to be observed in
+all mass ranges
+
+
+\begin{figure*}[htbp]
+  \centering
+  % \includegraphics[width=0.9\textwidth]{comparison}
+  \caption{\todo{TBD}}
+  \label{fig:R_t_donor}
+\end{figure*}
+
+\mr{Can you put some bullet points for what you think should go after
+  this? Some ideas: explain why we plot also Pols+98 models and
+  connect to GWs should be the aim here}
+
+
+\bibliography{./donorR.bib}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
