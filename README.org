@@ -1,0 +1,6 @@
+#+title: Very massive stars prefer case A
+
+(This README will be edited when opening the repository).
+
+I have edited the file and added a draft of bibliography. You can see
+the =pdf= and the corresponding =tex=.
