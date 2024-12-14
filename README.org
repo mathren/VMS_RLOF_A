@@ -3,7 +3,7 @@
 In the manuscript, to be submitted to RNAAS, we compare [[https://docs.mesastar.org/en/latest/][MESA]]
 models with overshooting parameters informed by observations in the
 relevant mass range with models without overshooting and the stellar
-models used in rapid binary population synthesis.
+models used in rapid binary population synthesis obtained using [[https://github.com/TeamCOMPAS/COMPAS][COMPAS]].
 
 We show that for very large initial masses, the radial evolution
 during the main sequence can lead to significant changes in the number
