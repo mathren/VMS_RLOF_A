@@ -45,10 +45,13 @@
 
 \section{Mass Transfer in Very Massive Binaries}
 
-Binary stars with a sufficiently small orbital separation undergo a
-mass transfer phase in which one donor star transfers mass to an
+Binary stars with a sufficiently small orbital separation
+($a\lesssim2500\,R_{\odot}$) undergo (at least) a mass transfer phase
+in which the donor star transfers mass the initially less massive
 accretor. For very massive stars ($ \gtrsim 30 \, M_{\odot}$), mass
-transfer most often occurs as case A or case B \cite{kippenhahn:67}.
+transfer most often occurs during the donor's hydrogen core-burning
+main sequence (case A) or helium core-burning (case B), which together cover
+$\sim99\%$ of the donor's lifetime \citep{kippenhahn:67}.
 
 \begin{figure*}[htbp]
   \centering
@@ -65,18 +68,19 @@ transfer most often occurs as case A or case B \cite{kippenhahn:67}.
 \end{figure*}
 
 
-Case B is expected more often than case A mass transfer, since stars
-in most mass ranges expand most prominently post-main sequence in the
-Hertzsprung gap \citep{vandenheuvel:69}. However, very massive stars
-may already undergo a drastic expansion in radius during their main
-sequence. \citep[e.g.,][]{sanyal:15, jiang:15, sabhahit:24}. This may
-increase the rate of case A \citep{demink:08}, which could have
-significant implications on the rates of Wolf-Rayet+O-type binaries
+For a flat in $\log_{10}(a)$ initial initial separation distribution
+\citep{opik:24}, case B is expected more often than case A mass
+transfer, since most stars expand dramatically post-main sequence
+\citep{vandenheuvel:69}. However, very massive stars may already
+undergo a drastic expansion in radius during their main sequence.
+\citep[e.g.,][]{sanyal:15, jiang:15, sabhahit:24}. This may increase
+the rate of case A \citep{demink:08}, which could have significant
+implications on the rates of Wolf-Rayet+O-type binaries
 \citep[e.g.,][]{nuijten:24}, X-ray binaries, and gravitational wave
 progenitors. The radius of the donor is dependent on unknown stellar
 parameters, including stellar winds \citep{renzo:17, josiek:24},
 metallicity \citep{xin:22}, close-to-super-Eddington-layers
-\citep[e.g.,][]{joss:73, paxton:13, jiang: 15, agrawal:22}, and
+\citep[e.g.,][]{joss:73, paxton:13, jiang:15, agrawal:22}, and
 convective boundary mixing \citep{anders:23, johnston:24}. Here, we
 illustrate this comparing the radial evolution of very massive stars
 varying convective boundary mixing, metallicity, and models commonly
@@ -84,37 +88,51 @@ adopted in rapid binary population synthesis.
 
 \section{Comparing Donor Radii}
 
-We computed 60 MESA mode ls (version 24.03.1) from $30 \, M_{\odot}$
-to $100 \, M_{\odot}$ at metallicity $Z=0.001,0.0001$ following the
-setup from \cite{renzo:23} with and without overshooting and compared
-them to the \cite{pols:98} models used in SSE/BSE \cite{hurley:00}
-taken from COMPAS \cite{stevenson:17, vignagomez:18, riley:22}. When
-using overshooting, our MESA models implement an exponential algorithm
-\citep{herwig:00} fit to the step overshooting calibrated on the width
-of main sequence in 30 Doradus \citep{brott:11} following
-\cite{claret:18}. This relatively ``large overshooting'' model is
-compared to a model that does not consider boundary mixing.
+We computed \textsc{MESA} models (version 24.03.1, \citealt{paxton:11,
+  paxton:13, paxton:15, paxton:18, paxton:19, jermyn:23}) from
+$30 \, M_{\odot}$ to $100 \, M_{\odot}$ in steps of $5\,M_\odot$ at
+metallicity $Z=0.001$ and $0.0001$ following the setup from
+\cite{renzo:23}. The gray lines in \Figref{fig:radii} show their
+radial evolution as a function of time.
 
-Individual models are shown in gray, and the red and blue lines in
-each panel of \Figref{fig:radii} denote the maximum radius during
-the main sequence and helium core burning phase respectively. The
-right axis shows orbital separations where the stellar radius meets
-the roche radius \citep{eggleton:83} considering a typical
+We explore models with (top panel) and without overshooting (middle
+panel) and compared them to the \cite{pols:98} models (bottom panel)
+used in \textsc{SSE/BSE} \citep{hurley:00} taken from \textsc{COMPAS}
+\citep{stevenson:17, vignagomez:18, riley:22}, which extrapolates for
+masses $\geq50\,M_\odot$.
+
+When using overshooting, our \textsc{MESA} models implement an
+exponential algorithm \citep{herwig:00} fit to the step overshooting
+calibrated on the width of main sequence in 30 Doradus
+\citep{brott:11} following \cite{claret:18}. This relatively ``large
+overshooting'' model is compared to models not including any
+convective boundary mixing, and to the \cite{pols:98} models including
+an effectively mass-dependent overshooting.
+
+The red and blue dashed lines in each panel of \Figref{fig:radii}
+denote the maximum radius during the main sequence and helium core
+burning phase, respectively. These mark the maximum Roche radius for a
+case A and case B donor, respectively. The right axis shows orbital
+separations $a$ where the stellar radius meets the roche radius
+\citep{eggleton:83}, neglecting orbital widening due to winds
+(included in the stellar models) and assuming a representative
 accretor-to-donor mass ratio of $q=0.55$. The red regions denote
 binaries which will undergo case A mass transfer and the blue regions
-denote binaries which will undergo case B mass transfer. In the top
-left panel, donors with masses $ \gtrsim 75 \, M_{\odot}$ can only
-experience case A. Removing convective boundary mixing (middle) keeps
-main sequence radii smaller, preserving the blue region at all
-masses. The overshooting implementation from \cite{pols:98} (bottom),
-while nonzero, still leaves a large window for case B up to
-$100 \, M_{\odot}$. At even lower metallicities (right), stars are
-more compact, and all models allow for case B mass transfer at all
-masses.
+denote binaries which will undergo case B mass transfer.
+
+For $Z=0.001$, when including overshooting (top left panel), donors
+with masses $ \gtrsim 75 \, M_{\odot}$ can only experience case A.
+Removing convective boundary mixing (middle) keeps main sequence radii
+smaller, preserving the blue region above the red line for case B mass
+transfer at all masses. The overshooting implementation from
+\cite{pols:98} (bottom), while nonzero, still leaves a large window
+for case B up to $100 \, M_{\odot}$. At even lower metallicities of
+$Z=0.0001$ (right), stars are more compact, and all models allow for
+case B mass transfer at all masses.
 
 \section{Implications for Post-Mass-Transfer Binaries}
 
-Convective boundary mixing \cite{brott:11, johnston:24} and
+Convective boundary mixing \citep{brott:11, johnston:24} and
 metallicity have a strong effect on stellar radii, which determine
 when a donor fills its Roche lobe. Case A mass transfer occurs overall
 on a longer (nuclear) timescale, while case B occurs on a much shorter
