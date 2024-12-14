@@ -1,6 +1,13 @@
-#+title: Very massive stars prefer case A
+#+title: On the prevalence of early mass transfer for very massive binaries
 
-(This README will be edited when opening the repository).
+In the manuscript, to be submitted to RNAAS, we compare [[https://docs.mesastar.org/en/latest/][MESA]]
+models with overshooting parameters informed by observations in the
+relevant mass range with models without overshooting and the stellar
+models used in rapid binary population synthesis.
 
-I have edited the file and added a draft of bibliography. You can see
-the =pdf= and the corresponding =tex=.
+We show that for very large initial masses, the radial evolution
+during the main sequence can lead to significant changes in the number
+of systems experiencing early case A vs. late case B mass transfer,
+with potential implications for post-mass-transfer binary systems.
+
+See the compiled [[./mass_transfer_proportions_1312.pdf][manuscript]] and the [[][input, output, and scripts on zenodo]].
