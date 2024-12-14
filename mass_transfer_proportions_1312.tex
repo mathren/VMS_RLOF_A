@@ -85,24 +85,46 @@ synthesis.
 
 \section{}
 
-The relative proportion of case A mass transfer in comparison to case
-B mass transfer scales with mass of the donor star. This is expected,
-as larger stars see greater rates of radial expansion during the main
-sequence. This has a significant side effect for stars
-with($\gtrsim 75M_{\odot}$), case A mass transfer is expected to
-explain in all possible mass transfer processes. For stars of lesser
-mass, the thermal expansion of the star at the end of the main
-sequence expands the star beyond its maximum radius during the main
-sequence. However, for stars in this mass range, the radius expands
-drastically during the main sequence, such that the maximum radius
-during the main sequence and helium core burning phase are similar.
+We computed 60 MESA models (version 24.03.1) from $30 \, M_{\odot}$ to
+$100 \, M_{\odot}$ at metallicity $Z=0.001,0.0001$ following the setup
+from \cite{renzo:23} with and without overshooting and compared them
+to the \cite{pols:98} models used in SSE/BSE \cite{hurley:00} taken
+from COMPAS \cite{stevenson:17, vignagomez:18, riley:22}. Individual
+models are shown in gray, and the red and blue lines in each panel of
+Fig.~\ref{fig:radii} denote the maximum radius during the main
+sequence and helium core burning phase respectively. The right axis
+shows orbital separations where the stellar radius meets the roche
+radius \citep{eggleton:83} considering a typical accretor-to-donor
+mass ratio of $q=0.55$. The red regions denote binaries which will
+undergo case A mass transfer and the blue regions denote binaries
+which will undergo case B mass transfer. In the top left panel, donors
+with masses $ \gtrsim 75 \, M_{\odot}$ can only experience case
+A. Removing convective boundary mixing (middle) keeps main sequence
+radii smaller, preserving the blue region at all masses. The
+overshooting implementation from \cite{pols:98} (bottom), while
+nonzero, still leaves a large window for case B up to
+$100 \, M_{\odot}$. At even lower metallicities (right), stars are
+more compact, and all models allow for case B mass transfer at all
+masses.
+
+% The relative proportion of case A mass transfer in comparison to case
+% B mass transfer scales with mass of the donor star. This is expected,
+% as larger stars see greater rates of radial expansion during the main
+% sequence. This has a significant side effect for stars
+% with($\gtrsim 75M_{\odot}$), case A mass transfer is expected to
+% explain in all possible mass transfer processes. For stars of lesser
+% mass, the thermal expansion of the star at the end of the main
+% sequence expands the star beyond its maximum radius during the main
+% sequence. However, for stars in this mass range, the radius expands
+% drastically during the main sequence, such that the maximum radius
+% during the main sequence and helium core burning phase are similar.
 
 In order to demonstrate the change in ratio between instances of case
 A and case B mass transfer, we modelled 60 stars while varying mass
 ($30-100 M_{\odot}$; of $5M_{\odot}$ intervals), metallicity
 ($Z = 0.001,0.001$) and model of boundary mixing. The top panels of
 FIGURE are determined from the exponential boundary mixing model from
-\cite{04} fit to the expected values from the step boundary mixing
+\cite{herwig:00} fit to the expected values from the step boundary mixing
 model from \cite{brott:11}. This is configured in
 \cite{claret:18}. This ``broad convective boundary mixing'' model is
 compared to a model that does not consider boundary mixing. Both
