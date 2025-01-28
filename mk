@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pdflatex mass_transfer_proportions_2701.tex
+bibtex mass_transfer_proportions_2701
+pdflatex mass_transfer_proportions_2701.tex
+pdflatex mass_transfer_proportions_2701.tex
