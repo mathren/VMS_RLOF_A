@@ -1,5 +1,5 @@
 % Define document class
-\documentclass[twocolumn]{aastex63}
+\documentclass[twocolumn]{aastex631}
 \DeclareRobustCommand{\Eqref}[1]{Eq.~\ref{#1}}
 \DeclareRobustCommand{\Figref}[1]{Fig.~\ref{#1}}
 \DeclareRobustCommand{\Tabref}[1]{Tab.~\ref{#1}}
@@ -18,12 +18,12 @@
 
 \author[0009-0008-2061-4946]{C.~A.~Burt}
 \affiliation{University of Arizona, Department of Astronomy \& Steward Observatory, 933 N.~Cherry Ave., Tucson, AZ 85721, USA}
-\author{\todo{TBD}}
-% \author[0000-0002-6718-9472]{M.~Renzo}
-% \affiliation{University of Arizona, Department of Astronomy \& Steward Observatory, 933 N.~Cherry Ave., Tucson, AZ 85721, USA}
 
-% \author[0000-0002-2215-1841]{A.~Grichener}
-% \affiliation{University of Arizona, Department of Astronomy \& Steward Observatory, 933 N.~Cherry Ave., Tucson, AZ 85721, USA}
+\author[0000-0002-6718-9472]{M.~Renzo}
+\affiliation{University of Arizona, Department of Astronomy \& Steward Observatory, 933 N.~Cherry Ave., Tucson, AZ 85721, USA}
+
+\author[0000-0002-2215-1841]{A.~Grichener}
+\affiliation{University of Arizona, Department of Astronomy \& Steward Observatory, 933 N.~Cherry Ave., Tucson, AZ 85721, USA}
 
 \begin{abstract}
   Common phases of mass transfer in stellar binaries are case A
@@ -65,7 +65,7 @@ $\sim99\%$ of the donor's lifetime \citep{kippenhahn:67}.
     have a metallicity $Z=0.001$ ($Z=0.0001$). Dashed red (blue) lines
     mark the maximum radius during the main sequence (until He core
     depletion). The red (blue) shaded areas underneath correspond to
-    case A (case B) mass transfer.}
+    case A (case B) mass transfer. \todo{add right log(a) axis}}
   \label{fig:radii}
 \end{figure*}
 
@@ -120,10 +120,10 @@ denote the maximum radius during the main sequence and helium core
 burning phase, respectively. These mark the maximum Roche radius for a
 case A and case B donor, respectively. The right axis shows orbital
 separations $a$ where the stellar radius meets the roche radius
-\citep{eggleton:83}, assuming a representative
-accretor-to-donor mass ratio of $q=0.55$ [CITE]. The red regions denote
-binaries which will undergo case A mass transfer and the blue regions
-denote binaries which will undergo case B mass transfer.
+\citep{eggleton:83}, assuming a representative accretor-to-donor mass
+ratio of $q=0.55$ \citep{kobulnicky:07,sana:12}. The red regions
+denote binaries which will undergo case A mass transfer and the blue
+regions denote binaries which will undergo case B mass transfer.
 
 For $Z=0.001$, when including overshooting (top left panel), donors
 with masses $ \gtrsim 75 \, M_{\odot}$ can only experience case A.
