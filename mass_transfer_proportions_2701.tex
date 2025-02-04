@@ -7,7 +7,7 @@
 \newcommand{\todo}[1]{{\large $\blacksquare$~\textbf{\color{red}[#1]}}~$\blacksquare$}
 \newcommand{\mr}[1]{{\textbf{\color{green!75!black}[#1]}}}
 % \usepackage{cuted}
-\usepackage{flushend}
+% \usepackage{flushend}
 \usepackage{amsmath}
 % \graphicspath{{./figures/}}
 
@@ -30,12 +30,13 @@
 \begin{abstract}
   Common phases of mass transfer in stellar binaries are case A
   (during the donor's main sequence) and case B (after the donor's
-  main sequence but before helium core depletion). Typically, stellar
-  radii significantly grow after the main sequence, making case B more
-  common. However, very massive stars may already undergo significant
-  expansion during the main sequence increasing the probability of
-  case A mass transfer.  For observationally-informed convective
-  boundary mixing, case A dominates for donor masses
+  main sequence but before helium core depletion). Most stars see
+  stellar radii significantly grow after the main sequence, making
+  case B more common. However, very massive stars may already undergo
+  significant expansion during the main sequence increasing the
+  probability of case A mass transfer. We find that using convective
+  boundary mixing informed by the width of the main sequence in 30
+  Doradus, cass A mass transfer dominates for donor masses
   $\gtrsim 75 \, M_{\odot}$. This is not the case without convective
   boundary mixing or in the stellar models commonly used in rapid
   binary population synthesis.  Therefore, case A mass transfer may be
@@ -47,12 +48,13 @@
 \section{Mass Transfer in Very Massive Binaries}
 
 Binary stars with a sufficiently small orbital separation
-($a\lesssim2500\,R_{\odot}$) undergo (at least) a mass transfer phase
-in which the donor star transfers mass to the initially less massive
-accretor [CITE?]. For very massive stars ($ \gtrsim 30 \, M_{\odot}$), mass
-transfer most often occurs during the donor's hydrogen core-burning
-(case A) or helium core-burning (case B), which together cover
-$\sim99\%$ of the donor's lifetime \citep{kippenhahn:67}.
+($a\lesssim2500\,R_{\odot}$) undergo (at least one) mass transfer
+phases in which the donor star transfers mass to the initially less
+massive accretor [CITE?]. For very massive stars
+($ \gtrsim 30 \, M_{\odot}$), mass transfer most often occurs during
+the donor's hydrogen core-burning (case A) or helium core-burning
+(case B), which together account for $\sim99\%$ of the donor's
+lifetime \citep{kippenhahn:67}. [REPETITION?]
 
 \begin{figure*}[htbp]
   \centering
@@ -72,40 +74,40 @@ $\sim99\%$ of the donor's lifetime \citep{kippenhahn:67}.
 
 
 For a flat in $\log_{10}(a)$ initial separation distribution
-\citep{opik:24}, case B is expected more often than case A mass
-transfer, since most stars expand dramatically post-main sequence
-\citep{vandenheuvel:69}. However, very massive stars may already
+\citep{opik:24}, case B is expected to occur more often than case A
+mass transfer, since most stars expand dramatically post-main sequence
+\citep[e.g.,][]{vandenheuvel:69}. However, very massive stars may already
 undergo a drastic expansion in radius during their main sequence.
-\citep[e.g.,][]{sanyal:15, jiang:15, sabhahit:24}. This may increase
+\citep[e.g.,][]{sanyal:15, jiang:15}. This may increase
 the rate of case A, affecting the evolution of the star and
 consequently potentially altering stellar parameters that determine
 the rate of Wolf-Rayet+O-type binaries \citep[e.g.,][]{nuijten:24},
-X-ray binaries, and gravitational wave progenitors.
+X-ray binaries \citep[e.g.,][]{mandel:22}, and gravitational wave progenitors [CITE].
 
-The radius of the
-donor is dependent on unknown stellar parameters, including stellar
-winds \citep{renzo:17, josiek:24}, metallicity \citep{xin:22},
+The radius of the donor is dependent on poorly constrained stellar
+parameters, including stellar winds \citep{renzo:17, josiek:24},
+metallicity \citep{xin:22}, treatment of
 close-to-super-Eddington-layers \citep[e.g.,][]{joss:73, paxton:13,
   jiang:15, agrawal:22, jermyn:23}, and convective boundary mixing
-\citep{anders:23, johnston:24}. Here, we illustrate this comparing the
-radial evolution of very massive stars while varying convective boundary
-mixing and metallicity with models commonly adopted in rapid binary
-population synthesis.
+\citep{anders:23, johnston:24}. With the sensitivity [CHECK] of the radius in
+mind, we explore the radial evolution of very massive stars while
+varying convective boundary mixing and metallicity with models
+commonly adopted in rapid binary population synthesis.
 
 \section{Comparing Donor Radii}
 
 We computed \textsc{MESA} models\footnote{Publicly available at
-  \href{https://doi.org/10.5281/zenodo.14757819}{doi.org/10.5281/zenodo.14757819}} (version 24.03.1,
-\citealt{paxton:11, paxton:13, paxton:15, paxton:18, paxton:19,
-  jermyn:23}) from $30 \, M_{\odot}$ to $100 \, M_{\odot}$ in steps of
-$5\,M_\odot$ at metallicity $Z=0.001$ and $0.0001$ following the setup
-from \cite{renzo:23}. The gray lines in \Figref{fig:radii} show their
-radial evolution as a function of time.
+  \href{https://doi.org/10.5281/zenodo.14757819}{doi.org/10.5281/zenodo.14757819}}
+(version 24.03.1, \citealt{paxton:11, paxton:13, paxton:15, paxton:18,
+  paxton:19, jermyn:23}) from $30 \, M_{\odot}$ to $100 \, M_{\odot}$
+in steps of $5\,M_\odot$ at metallicity $Z=0.001$ and $0.0001$
+following the setup from \cite{renzo:23}. The gray lines in
+\Figref{fig:radii} show their radial evolution as a function of time.
 
 We explore models with (top panel) and without overshooting (middle
 panel) and compare them to the \cite{pols:98} models (bottom panel)
 used in \textsc{SSE} \citep{hurley:00} generated using \textsc{COMPAS}
-\citep{stevenson:17, vignagomez:18, riley:22}, which extrapolates for
+\citep{stevenson:17, vignagomez:18, riley:22}, which is extrapolated for
 masses $\geq50\,M_\odot$.
 
 When using overshooting, our \textsc{MESA} models implement an
@@ -114,28 +116,27 @@ calibrated on the width of main sequence in 30 Doradus
 \citep{brott:11} following \cite{claret:18}. This relatively ``large
 overshooting'' model is compared to models not including any
 convective boundary mixing, and to the \cite{pols:98} models including
-an effectively mass-dependent overshooting.
-
-The red and blue dashed lines in each panel of \Figref{fig:radii}
-denote the maximum radius during the main sequence and helium core
-burning phase, respectively. These mark the maximum Roche radius for a
-case A and case B donor, respectively. The right axis shows orbital
-separations $a$ where the stellar radius meets the roche radius
-\citep{eggleton:83}, assuming a representative accretor-to-donor mass
-ratio of $q=0.55$, corresponding to the average for a flat mass-ratio
-distribution between 0.1 and 1 \citep{kobulnicky:07,sana:12}. The red regions
-denote binaries which will undergo case A mass transfer and the blue
-regions denote binaries which will undergo case B mass transfer.
-
-For $Z=0.001$, when including overshooting (top left panel), donors
-with masses $ \gtrsim 75 \, M_{\odot}$ can only experience case A.
-Removing convective boundary mixing (middle) keeps main sequence radii
-smaller, preserving the blue region above the red line for case B mass
-transfer at all masses. The overshooting implementation from
-\cite{pols:98} (bottom), while nonzero, still leaves a large window
-for case B up to at least $100 \, M_{\odot}$. At even lower
-metallicities of $Z=0.0001$ (right), stars are more compact, and all
-models allow for case B mass transfer at all masses.
+an effectively mass-dependent overshooting. The red and blue dashed
+lines in each panel of \Figref{fig:radii} denote the maximum radius
+during the main sequence and helium core burning phase,
+respectively. These mark the maximum Roche radius for a case A and
+case B donor, respectively. The right axis shows orbital separations
+$a$ where the stellar radius meets the roche radius computed from
+\citet{eggleton:83}, assuming a representative accretor-to-donor mass
+ratio of $q=0.55$. This value corresponds to the average for a flat
+mass-ratio distribution between 0.1 and 1
+\citep{kobulnicky:07,sana:12}. The red regions denote binaries which
+will undergo case A mass transfer and the blue regions denote binaries
+which will undergo case B mass transfer. For $Z=0.001$, when including
+overshooting (top left panel), donors with masses
+$ \gtrsim 75 \, M_{\odot}$ overwhelmingly experience case A.  Removing
+convective boundary mixing (middle) keeps main sequence radii smaller,
+preserving the blue region above the red line for case B mass transfer
+at all masses. The overshooting implementation from \cite{pols:98}
+(bottom), while nonzero, still leaves a large window for case B up to
+at least $100 \, M_{\odot}$. At even lower metallicities of $Z=0.0001$
+(right), stars are more compact, and all models allow for case B mass
+transfer at all masses.
 
 \section{Implications for Post-Mass-Transfer Binaries}
 
@@ -154,7 +155,7 @@ on a much shorter (thermal) timescale \citep[but see][]{klencki:22}.
 Moreover, the dynamical stability of the orbit during mass transfer is
 sensitive to the evolutionary phase of the stars involved
 \citep[e.g.,][]{claeys:14}. Therefore, whether a given binary
-experiences a common envelope evolution,which is critical to determine
+experiences dynamically unstable mass transfer,which is critical to determine
 the outcome of the binary system, depends on more than just the mass
 ratio, as generally assumed in rapid population synthesis. Comparing
 rows in \Figref{fig:radii} shows that the stellar evolution models
