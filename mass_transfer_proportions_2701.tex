@@ -28,7 +28,7 @@
 \author{\todo{TBD}}
 
 \begin{abstract}
-  Common phases of mass transfer in stellar binaries are case A
+  Common phases of mass transfer in massive stellar binaries are case A
   (during the donor's main sequence) and case B (after the donor's
   main sequence but before helium core depletion). Most stars see
   stellar radii significantly grow after the main sequence, making
@@ -52,9 +52,9 @@ Binary stars with a sufficiently small orbital separation
 one) mass transfer phases in which the donor star transfers mass to
 the initially less massive accretor. For very massive stars
 ($ \gtrsim 30 \, M_{\odot}$), mass transfer most often occurs during
-the donor's hydrogen core-burning (case A) or helium core-burning
-(case B), which together account for $\sim99\%$ of the donor's
-lifetime \citep{kippenhahn:67}.
+the donor's hydrogen core-burning phase (case A) or helium
+core-burning phase (case B), which together account for $\sim99\%$ of
+the donor's lifetime \citep{kippenhahn:67}.
 
 \begin{figure*}[htbp]
   \centering
@@ -90,10 +90,11 @@ parameters, including stellar winds \citep{renzo:17, josiek:24},
 metallicity \citep{xin:22}, treatment of
 close-to-super-Eddington-layers \citep[e.g.,][]{joss:73, paxton:13,
   jiang:15, agrawal:22, jermyn:23}, and convective boundary mixing
-\citep{anders:23, johnston:24}. We explore the radial evolution of
-very massive stars while varying convective boundary mixing and
-metallicity with models commonly adopted in rapid binary population
-synthesis.
+\citep{anders:23, johnston:24}. Here, we explore the radial evolution
+of very massive stars and its impact on when mass transfer starts. We
+also show variations in convective boundary mixing and metallicity and
+compare them to stellar models commonly adopted in rapid binary
+population synthesis.
 
 \section{Comparing Donor Radii}
 
@@ -105,28 +106,29 @@ in steps of $5\,M_\odot$ at metallicity $Z=0.001$ and $0.0001$
 following the setup from \cite{renzo:23}. The gray lines in
 \Figref{fig:radii} show their radial evolution as a function of time.
 
-We explore models with (top panel) and without overshooting (middle
-panel) and compare them to the \cite{pols:98} models (bottom panel)
-used in \textsc{SSE} \citep{hurley:00} generated using \textsc{COMPAS}
-\citep{stevenson:17, vignagomez:18, riley:22}, which is extrapolated for
-masses $\geq50\,M_\odot$.
-
-When using overshooting, our \textsc{MESA} models implement an
+When using overshooting (top), our \textsc{MESA} models implement an
 exponential algorithm \citep{herwig:00} fit to the step overshooting
 calibrated on the width of main sequence in 30 Doradus
-\citep[$\sim{}0.335$ pressure scale heights,][]{brott:11} following \cite{claret:18}, corresponding to
-\texttt{(f,f\_0)=(0.0415,0.008)}. This relatively ``large
-overshooting'' model is compared to models not including any
-convective boundary mixing, and to the \cite{pols:98} models including
-an effectively mass-dependent overshooting. The red and blue dashed
-lines in each panel of \Figref{fig:radii} denote the maximum radius
-during the main sequence and helium core burning phase,
-respectively. These mark the maximum Roche radius for a case A and
-case B donor, respectively. The right axis shows orbital separations
-$a$ where the stellar radius meets the roche radius computed from
-\citet{eggleton:83}, assuming a representative accretor-to-donor mass
-ratio of $q=0.55$. This value corresponds to the average for a flat
-mass-ratio distribution between 0.1 and 1
+\citep[$\sim{}0.335$ pressure scale heights,][]{brott:11} following
+\cite{claret:18}, corresponding to
+\texttt{(f,f\_0)=(0.0415,0.008)}. We compare this relatively ``large
+overshooting'' model with models not including any convective boundary
+mixing (middle), and to the \cite{pols:98} models including an
+effectively mass-dependent overshooting. These are the stellar models
+underpinning \textsc{SSE} \citep{hurley:00}, which we generated using
+\textsc{COMPAS} \citep{stevenson:17, vignagomez:18, riley:22}. We note
+that stars with masses $\geq50\,M_\odot$ in
+\textsc{SSE}/\textsc{COMPAS} are the result of extrapolation of the
+fits to the models of \cite{pols:98}.
+
+The red and blue dashed lines in each panel of \Figref{fig:radii}
+denote the maximum radius during the main sequence and helium core
+burning phase, respectively. These mark the maximum Roche radius for a
+case A and case B donor, respectively. The right axis shows orbital
+separations $a$ where the stellar radius meets the roche radius
+computed from \citet{eggleton:83}, assuming a representative
+accretor-to-donor mass ratio of $q=0.55$. This value corresponds to
+the average for a flat mass-ratio distribution between 0.1 and 1
 \citep{kobulnicky:07,sana:12}. The red regions denote binaries which
 will undergo case A mass transfer and the blue regions denote binaries
 which will undergo case B mass transfer. For $Z=0.001$, when including
