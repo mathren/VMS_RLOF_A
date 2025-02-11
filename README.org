@@ -14,3 +14,7 @@ with potential implications for post-mass-transfer binary systems.
 
 We provide a [[https://doi.org/10.5281/zenodo.14757819][reproducibility package on zenodo]] containing input and
 output of the simulations and scripts to create the figure.
+
+* TODO
+
+ - [ ] publish zenodo and erase this once done
