@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pdflatex mass_transfer_proportions_2701.tex
-bibtex mass_transfer_proportions_2701
-pdflatex mass_transfer_proportions_2701.tex
-pdflatex mass_transfer_proportions_2701.tex
+pdflatex on-the-prevalence-of-early-mass-transfer-for-very-massive-binaries.tex
+bibtex on-the-prevalence-of-early-mass-transfer-for-very-massive-binaries
+pdflatex on-the-prevalence-of-early-mass-transfer-for-very-massive-binaries.tex
+pdflatex on-the-prevalence-of-early-mass-transfer-for-very-massive-binaries.tex
