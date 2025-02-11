@@ -1,13 +1,16 @@
 #+title: On the prevalence of early mass transfer for very massive binaries
 
-In the manuscript, to be submitted to RNAAS, we compare [[https://docs.mesastar.org/en/latest/][MESA]]
-models with overshooting parameters informed by observations in the
-relevant mass range with models without overshooting and the stellar
-models used in rapid binary population synthesis obtained using [[https://github.com/TeamCOMPAS/COMPAS][COMPAS]].
+[[./on-the-prevalence-of-early-mass-transfer-for-very-massive-binaries.pdf][https://img.shields.io/badge/read-paper-blue.svg?style=flat]]
+
+In the [[./on-the-prevalence-of-early-mass-transfer-for-very-massive-binaries.pdf][manuscript]], submitted to RNAAS, we compare [[https://docs.mesastar.org/en/latest/][MESA]] models with
+overshooting parameters informed by observations in the relevant mass
+range with models without overshooting and the stellar models used in
+rapid binary population synthesis obtained using [[https://github.com/TeamCOMPAS/COMPAS][COMPAS]].
 
 We show that for very large initial masses, the radial evolution
 during the main sequence can lead to significant changes in the number
 of systems experiencing early case A vs. late case B mass transfer,
 with potential implications for post-mass-transfer binary systems.
 
-See the compiled [[./mass_transfer_proportions_1312.pdf][manuscript]] and the [[][input, output, and scripts on zenodo]].
+We provide a [[https://doi.org/10.5281/zenodo.14757819][reproducibility package on zenodo]] containing input and
+output of the simulations and scripts to create the figure.
